@@ -14,8 +14,8 @@ export const findNameOfTallestMountain = (array: Mountain[]): string => {
   let tallestMtnHeight = array[0].height;
   for (let mtn of array) {
     if (mtn.height > tallestMtnHeight) {
-      mtn.name = tallestMtnName;
-      mtn.height = tallestMtnHeight;
+      tallestMtnName = mtn.name;
+      tallestMtnHeight = mtn.height;
     }
   }
   return tallestMtnName;
